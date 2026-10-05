@@ -163,6 +163,18 @@ button{font:inherit;color:inherit}
 .author h3{font-family:var(--font-mincho);font-weight:800;font-size:20px}
 .author p{font-size:16px;line-height:2}
 .pillars{display:grid;gap:12px}
+.cards{display:grid;gap:12px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:18px 18px 16px;display:grid;gap:6px}
+.card .tag{justify-self:start;font-size:12px;font-weight:700;letter-spacing:.06em;color:#fff;background:var(--c, var(--btn-bg));border-radius:999px;padding:3px 11px}
+.card h3{font-size:17px;font-weight:700;line-height:1.5}
+.card p{font-size:14px;color:var(--ink-2);line-height:1.75}
+.kw.num{font-size:26px}
+.why{margin-top:14px;background:var(--tint);border-radius:18px;padding:16px 18px;font-size:15px;line-height:1.85}
+.after{margin-top:16px;background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:18px}
+.after h3,.mendan h3{font-size:17px;font-weight:700;margin-bottom:8px}
+.mendan{margin-top:16px;background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:18px}
+.mendan ol{padding-left:1.3em;display:grid;gap:4px}
+.subhead{margin-top:30px}
 .pillar{display:grid;grid-template-columns:72px minmax(0,1fr);gap:16px;align-items:center;background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:14px 16px}
 .kw{width:72px;height:72px;border-radius:16px;background:var(--btn-bg);color:var(--btn-fg);display:grid;place-content:center;font-family:var(--font-mincho);font-weight:800;font-size:19px}
 .pillar h3{font-size:17px;font-weight:700;line-height:1.5}
@@ -253,6 +265,7 @@ footer{border-top:1px solid var(--line);margin-top:48px;padding-block:20px 40px;
   .book-head{grid-template-columns:190px minmax(0,1fr);gap:28px}
   .register,.author,.lesson,.gate{padding:30px 32px}
   .pillars{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .cards{grid-template-columns:repeat(3,minmax(0,1fr))}
   .pillar{grid-template-columns:1fr;justify-items:start}
 }
 @media (min-width:900px){
@@ -293,7 +306,7 @@ footer{border-top:1px solid var(--line);margin-top:48px;padding-block:20px 40px;
         <p>僕は、毎晩、朝の3時から5時ごろまで、ゲームやYouTubeをしていました。朝は起きられず、そのうち学校に行けなくなりました。人と話すのも苦手で、ADHDの特性もあって、机に向かっても集中が続きませんでした。</p>
         <p>変わったのは、親がそのままの僕を受け止めてくれるようになってからです。そこで初めて「何かやってみようかな」と思えました。最初にやったのは、勉強ではなく、体を動かすこと。そこから少しずつ立て直して、国立医学部に現役合格しました。</p>
         <p>ここには、自分が立て直してきた中で分かったことと、個別指導で子どもたちを教えてきて分かったことを、1つずつ短い小冊子にまとめています。どれも無料で読めます。お子さんに合いそうなものから、開いてみてください。</p>
-        <p class="sign">Study Support 講師</p>
+        <p class="sign">スタディサポート 講師</p>
       </div>
       <div class="preface-cta">
         <a class="btn" href="#chumoku">小冊子を読む</a>
@@ -343,18 +356,39 @@ footer{border-top:1px solid var(--line);margin-top:48px;padding-block:20px 40px;
         <h2 id="chosha-h">不登校から、国立医学部に現役合格。</h2>
       </div>
       <div class="author">
-        <h3>Study Support 講師</h3>
+        <h3>スタディサポート 講師</h3>
         <p>毎晩、明け方までゲームやYouTubeをする生活から、学校に行けなくなる。人と話すのも苦手で、ADHDの特性もあり、集中が続かないことにも悩む。親がそのままの自分を受け止めてくれたことをきっかけに、体を動かすことから少しずつ立て直し、国立医学部に現役合格。いまはオンライン個別指導の講師として、子どもたちに勉強を教えている。</p>
+        <p><b>授業は、ぜんぶ僕が自分で担当します。</b></p>
       </div>
-      <div class="sec-head" style="margin-top:28px">
+      <div class="sec-head subhead">
         <span class="eyebrow">オンライン個別指導</span>
         <h2>小冊子に書いたことを、お子さんに合わせて一緒に。</h2>
       </div>
-      <div class="pillars">
-        <div class="pillar"><span class="kw">戻る</span><div><h3>わかる所まで戻って教える</h3><p>学年にこだわらず、つまずいた所からやり直します。</p></div></div>
-        <div class="pillar"><span class="kw">続く</span><div><h3>授業のあとも、家で続く</h3><p>復習プリント、写真での質問、保護者さまへ毎回ひとこと報告。</p></div></div>
-        <div class="pillar"><span class="kw">話せる</span><div><h3>勉強以外の話もできる</h3><p>不登校を経験した先生だから、学校や進路の話も急かさず聞きます。</p></div></div>
+
+      <div class="sec-head"><span class="eyebrow">こんなお子さんに</span></div>
+      <div class="cards">
+        <div class="card" style="--c:var(--c-futoko)"><span class="tag">学校を休みがち・不登校</span><h3>「今の授業」からではなく、わかる所から始めます</h3><p>休んでいた間に抜けた所まで戻って、「できた」を作ってから進みます。</p></div>
+        <div class="card" style="--c:var(--c-tokusei)"><span class="tag">集中・発達の特性</span><h3>始めやすく、続けやすい工夫を一緒に</h3><p>集中が続きにくい、始めるまでに時間がかかる。その子に合ったやり方を、一緒に探します。</p></div>
+        <div class="card" style="--c:var(--c-juken)"><span class="tag">勉強が苦手・受験やテスト</span><h3>受験や定期テストに向けても</h3><p>中学受験・高校受験・大学受験の対策、定期テスト・模試の対策もします。</p></div>
       </div>
+
+      <div class="sec-head subhead"><span class="eyebrow">大切にしていること</span></div>
+      <div class="pillars">
+        <div class="pillar"><span class="kw num">1</span><div><h3>否定しない</h3><p>「わからない」「できなかった」を責めません。間違えても大丈夫な時間にします。</p></div></div>
+        <div class="pillar"><span class="kw num">2</span><div><h3>急かさない</h3><p>答えが出るまで待ちます。勉強以外の話をしてもかまいません。</p></div></div>
+        <div class="pillar"><span class="kw num">3</span><div><h3>わかる所から</h3><p>学年にこだわらず、つまずいた所まで戻ってやり直します。</p></div></div>
+      </div>
+      <p class="why">僕自身、学校に行けなくなり、人と話すのも苦手でした。立て直せたのは、そのままの自分を受け止めてもらえたからです。だから授業でも、この3つを大切にしています。</p>
+
+      <div class="after">
+        <h3>授業のあとも、家で続くように</h3>
+        <ul class="checks">
+          <li>復習プリントをお渡しします</li>
+          <li>授業のない日も、わからない問題を写真で質問できます</li>
+          <li>保護者さまへ、毎回ひとこと報告します</li>
+        </ul>
+      </div>
+
       <div class="lesson">
         <div class="price"><span class="unit">30分あたり</span><span class="yen">2,000円</span><span class="sub">（授業は60分から）</span></div>
         <div class="facts"><span>入会金0円</span><span>教材費0円</span><span>振替OK</span><span>はじめは1回ごとのお支払いでOK</span></div>
@@ -362,12 +396,23 @@ footer{border-top:1px solid var(--line);margin-top:48px;padding-block:20px 40px;
           <div><dt>授業</dt><dd>Google Meet。自宅から、スマホでも受けられます。</dd></div>
           <div><dt>対象</dt><dd>小・中・高。学校を休みがちな子、集中が続きにくい子、発達の特性がある子、勉強が苦手な子</dd></div>
           <div><dt>受験</dt><dd>中学受験・高校受験・大学受験の対策、定期テスト・模試の対策もできます</dd></div>
+          <div><dt>お支払い</dt><dd>銀行振込の先払い。はじめは1回ごとで大丈夫です。</dd></div>
         </dl>
+        <p class="note-sm"><a href="annai.html">授業のご案内（くわしく）</a></p>
         <ol class="steps">
           <li><span class="n">1</span><div><b>フォームから申込み（1分）</b><small>ご希望の日時を3つまで選べます</small></div></li>
           <li><span class="n">2</span><div><b>無料15分面談（オンライン）</b><small>保護者さまだけのご参加でも大丈夫です</small></div></li>
           <li><span class="n">3</span><div><b>授業スタート</b><small>お子さんのペースで進めます</small></div></li>
         </ol>
+      </div>
+      <div class="mendan">
+        <h3>無料15分面談でお話しすること</h3>
+        <ol>
+          <li>お子さんの今の様子を聞かせてください</li>
+          <li>どこから始めるとよさそうか、一緒に考えます</li>
+          <li>授業の進め方と料金をご説明します（ご質問もどうぞ）</li>
+        </ol>
+        <p class="note-sm" style="margin-top:8px">保護者さまだけのご参加でも大丈夫です。</p>
       </div>
       <div class="faq" id="faq">
         <h3 class="faq-h">よくある質問</h3>
@@ -376,7 +421,7 @@ footer{border-top:1px solid var(--line);margin-top:48px;padding-block:20px 40px;
         <details><summary>発達の診断がなくても、相談できますか？</summary><p>できます。診断があるかどうかは関係ありません。集中が続きにくい、始めるまでに時間がかかる、など、気になっていることをそのまま聞かせてください。</p></details>
         <details><summary>受験や定期テストの対策もできますか？</summary><p>できます。中学受験・高校受験・大学受験の対策や、定期テスト・模試の対策もしています。</p></details>
         <details><summary>学校に戻ることが目標ですか？</summary><p>学校に戻るかどうかとは別に、家で勉強の土台を作ることを大事にしています。</p></details>
-        <details><summary>授業料のほかに、かかるお金はありますか？</summary><p>入会金と教材費は0円です。はじめは1回ごとのお支払いで大丈夫です。</p></details>
+        <details><summary>授業料のほかに、かかるお金はありますか？</summary><p>入会金と教材費は0円です。お支払いは銀行振込の先払いで、はじめは1回ごとで大丈夫です。</p></details>
       </div>
       <div class="cta">
         <a class="btn big" href="https://docs.google.com/forms/d/e/1FAIpQLSej6HRcgiEUTx9Kz5EBPPG8kWMpTRiiEmV_9A0KooS7tsm-JA/viewform" target="_blank" rel="noopener">無料15分面談を申し込む</a>
@@ -892,7 +937,7 @@ footer{border-top:1px solid var(--line);margin-top:48px;padding-block:20px 40px;
     });
     prose.append(el('h2', {class:'ch-h'}, 'おわりに'));
     b.afterword.forEach(function(p){ prose.append(el('p', {text:p})); });
-    prose.append(el('p', {class:'sign', text:'Study Support 講師'}));
+    prose.append(el('p', {class:'sign', text:'スタディサポート 講師'}));
     var others = BOOKS.filter(function(x){ return x.id !== b.id && !x.soon; }).slice(0, 2);
     wrap.append(
       el('section', {class:'end-cta'},
