@@ -427,6 +427,7 @@ footer{border-top:1px solid var(--line);margin-top:48px;padding-block:20px 40px;
       </div>
       <div class="cta">
         <a class="btn big line" href="https://lin.ee/WAuCUIJ" target="_blank" rel="noopener">LINEで無料15分面談を申し込む</a>
+        <a class="btn ghost" href="https://calendar.app.google/wWpnfg5s854P57TR8" target="_blank" rel="noopener" style="margin-top:10px">日時を選んで、すぐ予約する</a>
         <p class="note-sm">お子さんの今の様子を、聞かせてください。</p>
       </div>
     </section>
@@ -447,6 +448,7 @@ footer{border-top:1px solid var(--line);margin-top:48px;padding-block:20px 40px;
   /* 公式LINEの友だち追加URL。追加すると、あいさつメッセージで「#dokusha」つきのリンクが届く */
   var REGISTER_URL = 'https://lin.ee/WAuCUIJ';
   var MENDAN_URL = 'https://lin.ee/WAuCUIJ';
+  var YOYAKU_URL = 'https://calendar.app.google/wWpnfg5s854P57TR8';
   var KEY = 'tatenaoshi-bunko-reader';
 
   var CATS = {
@@ -1044,6 +1046,7 @@ footer{border-top:1px solid var(--line);margin-top:48px;padding-block:20px 40px;
         el('h2', {text:'この小冊子の内容を、お子さんに合わせて一緒に進めます'}),
         el('p', {text:'30分2,000円（授業は60分から）・入会金0円。まずは無料の15分面談で、お子さんの今の様子を聞かせてください。保護者さまだけのご参加でも大丈夫です。'}),
         el('a', {class:'btn big line', href:MENDAN_URL, target:'_blank', rel:'noopener', text:'LINEで無料15分面談を申し込む'}),
+        el('a', {class:'btn ghost', href:YOYAKU_URL, target:'_blank', rel:'noopener', style:'margin-top:10px', text:'日時を選んで、すぐ予約する'}),
         unlocked ? null : el('p', {class:'note-sm', text:'LINEで友だち追加すると、ほかの小冊子も最後まで読めます。'})
       ),
       el('section', {class:'sec-head'}, el('span', {class:'eyebrow', text:'次に読む小冊子'})),
