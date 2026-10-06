@@ -317,7 +317,7 @@ footer{border-top:1px solid var(--line);margin-top:48px;padding-block:20px 40px;
     <section class="sec" id="chumoku" aria-labelledby="chumoku-h">
       <div class="sec-head">
         <span class="eyebrow">注目の小冊子</span>
-        <h2 id="chumoku-h">まずは、この6冊から</h2>
+        <h2 id="chumoku-h">まずは、この7冊から</h2>
       </div>
       <div class="carousel" id="carousel" role="region" aria-roledescription="carousel" aria-label="注目の小冊子">
         <div class="track" id="track"></div>
@@ -458,7 +458,7 @@ footer{border-top:1px solid var(--line);margin-top:48px;padding-block:20px 40px;
 
   var BOOKS = [
     {
-      id:'b001', no:'001', tags:['futoko','nigate'], featured:true,
+      id:'b001', no:'001', tags:['futoko','nigate'], featured:true, free:true,
       title:'学校を休んでいた子の勉強、どこから始める？',
       cover:['学校を休んでいた','子の勉強、','どこから始める？'],
       obi:'今の授業から、じゃなくていい。',
@@ -540,19 +540,26 @@ footer{border-top:1px solid var(--line);margin-top:48px;padding-block:20px 40px;
     },
     {
       id:'b003', no:'003', tags:['nigate'], featured:true,
-      title:'テスト勉強は「まとめ」より「解く」',
-      cover:['テスト勉強は','「まとめ」より','「解く」'],
-      obi:'きれいなノートと、点数は別もの。',
-      learn:['ノートまとめだけでは点数が伸びにくい理由','学校のワークでできる「隠して解く」方法','テスト前日に「印の問題」だけをやるわけ'],
+      title:'テスト勉強は、最後に「解く」',
+      cover:['テスト勉強は、','最後に','「解く」'],
+      obi:'きれいなノートも、いい一歩。',
+      learn:['きれいなノートづくりを、やめなくていい理由','テストで解けなかった問題を、どう考えるか','学校のワークでできる「隠して解く」方法','テスト前日に「印の問題」だけをやるわけ'],
       preface:[
-        'テスト前、色ペンを何色も使って、きれいなノートを作る。時間をかけたのに、点数はあまり変わらない。勉強が苦手な子ほど、この「がんばったのに伸びない」をくり返しがちです。',
-        'がんばり方が悪いわけではありません。時間の使いどころが、少しずれているだけです。この小冊子では、同じ時間で点数につながりやすい勉強のしかたを、学校のワークだけでできる形で紹介します。'
+        'テスト前、色ペンを何色も使って、きれいなノートを作る。そんなお子さんを見て、「それより問題を解いたほうが…」と思ったことはありませんか。',
+        '僕は、ノートづくりが楽しいなら、それはそれでいいと思っています。勉強に向かえていること自体が、大事な一歩だからです。',
+        'ただ、テストで点にするには、もう一つ足したいことがあります。何も見ずに「解く」ことです。この小冊子では、ノートづくりはそのままに、学校のワークだけでできる「解く」の足し方を紹介します。'
       ],
       chapters:[
-        {title:'「わかった気」と「解ける」は違う', blocks:[
-          {t:'p', text:'教科書やノートを読み返すと、内容が目に入ってくるので「わかった」という気持ちになります。でもテストでは、何も見ずに答えを思い出して書かなければいけません。'},
-          {t:'p', text:'読んで分かることと、何も見ずに解けることは、別の力です。そして、記憶に残りやすいのは、読み返すことより、思い出そうとする練習のほうだと言われています。'},
-          {t:'p', text:'だから、テスト勉強の時間は、まとめるより「解く」ことに使ったほうが、点数につながりやすいのです。'}
+        {title:'きれいなノートは、やめなくていい', blocks:[
+          {t:'p', text:'きれいなノートを作るのが楽しくてやっているなら、無理にやめさせなくていいと僕は思います。'},
+          {t:'p', text:'勉強が苦手な子にとっては、勉強に関することを少しでも始められた、というだけで大きな一歩です。手を動かして、教科書の内容に一度ふれる。それだけでも、頭は動き始めています。'},
+          {t:'p', text:'楽しくノートを作っているうちに、意外と内容が頭に入っている、ということもけっこうあります。効果があるかどうかは、やってみたあとの結果で分かることです。最初から「効率のいいやり方」ばかり考えるより、少し楽しみながら勉強できるほうが、僕はいいと思います。'}
+        ]},
+        {title:'解けなかった問題は、本番の前に見つかってよかった', blocks:[
+          {t:'p', text:'教科書やノートで内容にふれて、一度「わかる」。これは、とても大事なことです。一度もわかっていないことは、思い出しようがないからです。'},
+          {t:'p', text:'ただ、テストでは、何も見ずに答えを思い出して書かなければいけません。わかっていたはずなのに、テストでは書けなかった。そんなことも起きます。'},
+          {t:'p', text:'でも、それは失敗ではありません。「ここは、思い出す練習が足りなかったんだな」と分かった、ということです。受験のような大事なテストの前に気づけたなら、むしろよかったと僕は思います。'},
+          {t:'p', text:'そして、記憶に残りやすいのは、読み返すことより、思い出そうとする練習のほうだと言われています。思い出そうとした回数が多いほど、テストでも思い出しやすくなります。だから、ノートを作ったら、最後は「解く」で仕上げます。'}
         ]},
         {title:'ワークを、答えを隠してもう一度', blocks:[
           {t:'p', text:'新しい問題集を買う必要はありません。定期テストは授業とワークから出ることが多いので、学校のワークがいちばんの教材です。'},
@@ -566,7 +573,7 @@ footer{border-top:1px solid var(--line);margin-top:48px;padding-block:20px 40px;
         ]}
       ],
       afterword:[
-        'きれいなノートが悪いわけではありません。ただ、点数を上げたいなら、時間の多くを「解く」に回してみてください。',
+        'きれいなノートが悪いわけではありません。楽しく作れているなら、それだけでいい勉強です。そのうえで、点数につなげたいなら、最後は「解く」に時間を回してみてください。',
         'どの問題に印をつけるか、本人だけで判断するのが難しいこともあります。個別指導では、ワークのどこを解き直せばいいかを一緒に決めていきます。'
       ]
     },
@@ -672,6 +679,50 @@ footer{border-top:1px solid var(--line);margin-top:48px;padding-block:20px 40px;
         'だから、お母さん・お父さん自身が、だれかに話を聞いてもらったり、相談できる場所を持ったりすることも、すごく大事だと思います。不登校の子をもつ親の相談にのっている人もいるので、頼ってみるのもありだと思います。',
         '勉強のことは、僕が一緒に考えます。最初の一歩は、勉強じゃなくても大丈夫です。'
       ]
+    },
+    {
+      id:'b007', no:'007', tags:['juken','nigate'], featured:true,
+      title:'問題集を何冊やっても、伸びないとき',
+      cover:['問題集を','何冊やっても、','伸びないとき'],
+      obi:'大事なのは、問題の数より「核」。',
+      learn:['問題をたくさん覚えるより、「核」をつかむほうがいい理由','問題集が「枝」ばかり見せてくれるわけ','1問ごとに「どの核の枝か」を確かめる方法','できていない単元を見つけたら、次に考えること'],
+      preface:[
+        '問題集を1冊終えたら、また次の1冊。たくさん解いているのに、模試の点数が思ったほど上がらない。そんなことはありませんか。',
+        '僕は、勉強でいちばん大事なのは、解いた問題の数より、その単元の「核」をつかむことだと思っています。核というのは、その単元でいちばん大事な、土台になる考え方のことです。',
+        'この小冊子では、この「核」と、そこから伸びる「枝」の考え方を書きます。受験勉強にも、定期テストにも使えます。'
+      ],
+      chapters:[
+        {title:'覚えられる量には、限りがある', blocks:[
+          {t:'p', text:'人が覚えておける量には、限りがあります。問題を1問ずつ、解き方ごと全部覚えようとしたら、すぐにいっぱいになってしまいます。'},
+          {t:'p', text:'だから大事なのは、その単元の「核」をしっかりつかんでおくことです。核さえわかっていれば、そこから先は、少し考えれば自分でつなげられます。核から枝を生やすのは、思っているより簡単です。'},
+          {t:'p', text:'たとえば、中学の方程式。「移項すると符号が変わる」と覚えている子は多いと思います。でも核は、「両辺に同じことをしても、等しいまま」ということです。移項は、その核から伸びた枝の1つです。核がわかっていれば、ルールを忘れても、自分で考えて解けます。'}
+        ]},
+        {title:'問題集は、「枝」をたくさん見せてくれる', blocks:[
+          {t:'p', text:'問題集には、いろいろな問題がたくさんのっています。そのほうが見ばえもいいし、お得な感じもします。だから、問題集が悪いわけではありません。'},
+          {t:'p', text:'ただ、問題集が見せてくれるのは、核から伸びた「枝」であることが多いです。枝をたくさん見ても、根もとの核がつかめていないと、少し形を変えた問題が出たときに手が止まってしまいます。'},
+          {t:'p', text:'模試や入試で使えるのは、しっかりした土台の理解です。核がわかっていれば、初めて見る問題でも「これは、あの核からちょっと枝が伸びただけやな」と気づけます。'}
+        ]},
+        {title:'1問解くたびに、「どの核の枝か」を見る', blocks:[
+          {t:'p', text:'問題集を使うときも、ただ解いて丸をつけるだけでなく、1問ごとに「この問題は、どの核から伸びた枝かな」と考えてみてください。'},
+          {t:'box', title:'1問ごとの確かめ方', ordered:true, items:[
+            '問題を解いて、丸つけをする',
+            'この問題で使った「核」を、ひとことで言ってみる（頭の中でOK）',
+            '2つの核を組み合わせた問題なら、2つとも言ってみる',
+            '核が言えなかったら、教科書のその単元に戻って確かめる'
+          ]},
+          {t:'p', text:'これを続けると、たくさんあるように見えた問題が、実はいくつかの核の組み合わせでできていることが見えてきます。そうなると、覚えることはむしろ減っていきます。'}
+        ]},
+        {title:'できていない所を見つけたら、「どうしたらわかるか」を考える', blocks:[
+          {t:'p', text:'入試の直前に限らず、大事なのは、自分ができていない所がどこなのかを、ちゃんとつかむことです。模試やテストの「×」から、できていない単元を見つけます（数え方は、小冊子004に書いています）。'},
+          {t:'p', text:'単元が見つかったら、次は「その単元を、どうしたら理解できるか」を考えます。どこが核で、どこでつまずいているのかを見つけるのは、実はかなりレベルの高い作業です。問題集だけではなかなかできませんし、集団の塾で一人ひとりに合わせてやってもらうのも難しいと思います。'},
+          {t:'p', text:'だから、難関校を目指すなら、先生を選ぶときに、その先生の学歴も見ておいたほうがいいと思います。少しリアルな話ですが、高いレベルの学校に受かってきた人のほうが、どこが核なのかをわかっていることが多いからです。核がわかっていないと、高いレベルの学校にはなかなか受かりません。'},
+          {t:'p', text:'もちろん、先生の良さは学歴だけで決まるものではありません。話しやすさや、子どもとの相性も、とても大事です。'}
+        ]}
+      ],
+      afterword:[
+        '問題をたくさん解くのは、悪いことではありません。でも、1問1問を「どの核の枝か」という目で見るだけで、同じ1冊でも、身につくものが変わってきます。',
+        '僕の個別指導では、どの単元のどこがわかっていないのかを一緒に見つけて、その子がわかるやり方を一緒に考えます。'
+      ]
     }
   ];
 
@@ -753,6 +804,7 @@ footer{border-top:1px solid var(--line);margin-top:48px;padding-block:20px 40px;
   var dotsBox = document.getElementById('dots');
   var carousel = document.getElementById('carousel');
   var featured = BOOKS.filter(function(b){ return b.featured; });
+  document.getElementById('chumoku-h').textContent = 'まずは、この' + featured.length + '冊から';
   var idx = 0, resumeT = null;
   var dots = [];
   featured.forEach(function(b, i){
@@ -765,7 +817,7 @@ footer{border-top:1px solid var(--line);margin-top:48px;padding-block:20px 40px;
           el('span', {class:'learn-h', text:'この小冊子でわかること'}),
           el('ul', null, b.learn.map(function(x){ return el('li', {text:x}); }))
         ),
-        el('a', {class:'btn', href:'#' + b.id, text:'試し読みする'})
+        el('a', {class:'btn', href:'#' + b.id, text: unlocked ? '読む' : (b.free ? '最後まで読む' : '試し読みする')})
       )
     ));
     var d = el('button', {class:'dot', type:'button', 'aria-label':(i + 1) + '冊目', 'aria-current': i === 0 ? 'true' : 'false', onclick:function(){ hold(); go(i); }}, el('span', {class:'fill'}));
@@ -807,7 +859,7 @@ footer{border-top:1px solid var(--line);margin-top:48px;padding-block:20px 40px;
         cover(b),
         el('span', null, tagEl(b)),
         el('span', {class:'shelf-title', text:b.title}),
-        el('span', {class:'shelf-sub', text: b.soon ? '近日公開・登録するとお知らせが届きます' : '約' + minutes(b) + '分で読めます'})
+        el('span', {class:'shelf-sub', text: b.soon ? '近日公開・登録するとお知らせが届きます' : (b.free && !unlocked ? '約' + minutes(b) + '分・登録なしで最後まで読めます' : '約' + minutes(b) + '分で読めます')})
       ));
     });
   }
@@ -943,10 +995,12 @@ footer{border-top:1px solid var(--line);margin-top:48px;padding-block:20px 40px;
   }
 
   function buildBook(b){
+    /* free:true の小冊子は、LINE登録なしで最後まで読める（お試しの1冊） */
+    var open = unlocked || !!b.free;
     var wrap = el('article', {class:'reader', style:'--c:' + colorOf(b)});
     var tocItems = [['はじめに', false]];
-    b.chapters.forEach(function(ch, i){ tocItems.push(['第' + (i + 1) + '章　' + ch.title, !unlocked]); });
-    tocItems.push(['おわりに', !unlocked]);
+    b.chapters.forEach(function(ch, i){ tocItems.push(['第' + (i + 1) + '章　' + ch.title, !open]); });
+    tocItems.push(['おわりに', !open]);
     var toc = el('ol', null, tocItems.map(function(t){
       var lock = null;
       if (t[1]) { lock = el('span', {class:'lock', 'aria-label':'LINE登録で読めます'}); lock.innerHTML = LOCK; }
@@ -962,7 +1016,7 @@ footer{border-top:1px solid var(--line);margin-top:48px;padding-block:20px 40px;
           el('dl', {class:'colophon'},
             el('div', null, el('dt', {text:'書いた人'}), el('dd', {text:'不登校から国立医学部に現役合格した講師'})),
             el('div', null, el('dt', {text:'読む時間'}), el('dd', {text:'約' + minutes(b) + '分'})),
-            el('div', null, el('dt', {text:'読み方'}), el('dd', {text:'「はじめに」は試し読み。続きは無料のLINE登録で'}))
+            el('div', null, el('dt', {text:'読み方'}), el('dd', {text: b.free ? 'LINE登録なしで、最後まで読めます' : (unlocked ? '最後まで読めます' : '「はじめに」は試し読み。続きは無料のLINE登録で')}))
           ))),
       el('h1', {class:'book-title', text:b.title}),
       el('p', {class:'book-obi', text:b.obi}),
@@ -970,11 +1024,11 @@ footer{border-top:1px solid var(--line);margin-top:48px;padding-block:20px 40px;
       el('nav', {class:'toc', 'aria-label':'目次'}, el('h2', {text:'目次'}), toc)
     );
     var prose = el('div', {class:'prose'});
-    if (!unlocked) prose.append(el('span', {class:'trial', text:'試し読み'}));
+    if (!open) prose.append(el('span', {class:'trial', text:'試し読み'}));
     prose.append(el('h2', {class:'ch-h'}, 'はじめに'));
     b.preface.forEach(function(p){ prose.append(el('p', {text:p})); });
     wrap.append(prose);
-    if (!unlocked){
+    if (!open){
       wrap.append(el('div', {class:'fade', 'aria-hidden':'true'}), gate(b));
       return wrap;
     }
@@ -991,7 +1045,8 @@ footer{border-top:1px solid var(--line);margin-top:48px;padding-block:20px 40px;
         el('span', {class:'eyebrow', text:'不登校から国立医学部に現役合格した講師の、オンライン個別指導'}),
         el('h2', {text:'この小冊子の内容を、お子さんに合わせて一緒に進めます'}),
         el('p', {text:'30分2,000円（授業は60分から）・入会金0円。まずは無料の15分面談で、お子さんの今の様子を聞かせてください。保護者さまだけのご参加でも大丈夫です。'}),
-        el('a', {class:'btn big line', href:MENDAN_URL, target:'_blank', rel:'noopener', text:'LINEで無料15分面談を申し込む'})
+        el('a', {class:'btn big line', href:MENDAN_URL, target:'_blank', rel:'noopener', text:'LINEで無料15分面談を申し込む'}),
+        unlocked ? null : el('p', {class:'note-sm', text:'LINEで友だち追加すると、ほかの小冊子も最後まで読めます。'})
       ),
       el('section', {class:'sec-head'}, el('span', {class:'eyebrow', text:'次に読む小冊子'})),
       el('div', {class:'next'}, others.map(function(x){
